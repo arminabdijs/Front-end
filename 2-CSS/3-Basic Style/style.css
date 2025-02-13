@@ -1,0 +1,173 @@
+/*Color*/
+/*p {
+    color: red;
+}*/
+
+/*p {
+    color: #979892;
+}*/
+
+/*p {
+    color: rgba(255, 34, 255);
+}*/
+/*---------------------------------------------------------*/
+
+
+/*Font Size*/
+/*p {
+    font-size: 1.5em;
+}*/
+
+/*p {
+    font-size: 15px;
+}*/
+
+/*p {
+    font-size: 550%;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*background color*/
+/*
+p{
+    font-size: 30px;
+    background-color: #21f0f0;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*border*/
+/*
+p{
+    font-size: 30px;
+    border: 1px solid #de0c0c;
+}*/
+
+/*p{
+    font-size: 30px;
+    border: 1px dashed #de0c0c;
+
+}*/
+
+/*p{
+    font-size: 30px;
+    border: 1px dotted #de0c0c;
+
+}*/
+
+
+/*p{
+    font-size: 30px;
+    border: 5px double #de0c0c;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*width*/
+/*p {
+    font-size: 30px;
+    width: 50%;
+    border: 5px solid #de0c0c;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*max width*/
+/*p{*/
+/*    font-size: 30px;*/
+/*    width: 50%;*/
+/*    max-width: 500px;*/
+/*    border: 5px solid #de0c0c;*/
+/*}*/
+/*---------------------------------------------------------*/
+
+
+/*text decoration*/
+/*p {
+    font-size: 30px;
+    text-decoration: underline;
+}*/
+
+/*p {
+    font-size: 30px;
+    text-decoration: overline;
+}*/
+
+
+/*p {
+    font-size: 30px;
+    text-decoration: line-through;
+}*/
+
+/*---------------------------------------------------------*/
+
+
+/*letter spacing*/
+/*p{
+    font-size: 30px;
+    letter-spacing: 20px;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*word spacing*/
+/*
+p {
+    font-size: 30px;
+    word-spacing: 50px;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*line height*/
+/*
+p{
+    font-size: 30px;
+    line-height: 90px;
+}*/
+
+
+/*text transform*/
+/*
+p{
+    font-size: 30px;
+    text-transform: capitalize;
+}*/
+
+/*p{
+    font-size: 30px;
+    text-transform: lowercase;
+}*/
+
+
+/*p{
+    font-size: 30px;
+    text-transform: uppercase;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*box sizing */
+/*
+p{
+    font-size: 30px;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 500px;
+}*/
+
+
+/*text align*/
+/*p {
+    font-size: 30px;
+    text-align: center;
+}*/
+/*---------------------------------------------------------*/
+
+
+/*text shadow*/
+p {
+    font-size: 30px;
+    text-shadow: 2px 2px 2px red;
+}
