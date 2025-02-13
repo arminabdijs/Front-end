@@ -1,157 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<form action="">
-    <br><br><br>
-    <!--Tag input && label-->
-    <label for="username">Username:</label>
+  </head>
+  <body>
+    <form action="" autocomplete="on" target="_blank" method="post">
+      <br /><br /><br />
+      <!--Tag input && label-->
+      <label for="username">Username:</label>
 
-    <input type="text" id="username" name="username" placeholder="Username" minlength="4" maxlength="10">
-    <button>send</button>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Username"
+        minlength="4"
+        maxlength="10"
+      />
+      <button>send</button>
 
-    <br><br><br>
-    <!--Attribute readonly-->
-    <label for="username2">Username:</label>
+      <br /><br /><br />
+      <!--Attribute readonly-->
+      <label for="username2">Username:</label>
 
-    <input type="text" id="username2" name="username" placeholder="Username" minlength="4" maxlength="10" readonly>
+      <input
+        type="text"
+        id="username2"
+        name="username"
+        placeholder="Username"
+        minlength="4"
+        maxlength="10"
+        readonly
+      />
 
-    <br><br><br>
-    <!--Attribute readonly-->
-    <label for="username3">Username:</label>
+      <br /><br /><br />
+      <!--Attribute pattern-->
+      <label for="username3">Username:</label>
 
-    <input type="text" id="username3" name="username" placeholder="Username" minlength="4" maxlength="10"
-           pattern="/^w+$/g">
+      <input
+        type="text"
+        id="username3"
+        name="username"
+        placeholder="Username"
+        minlength="4"
+        maxlength="10"
+        pattern="(\w{3,16})([ ]{0,3})(\w{3,16})"
+        required
+      />
 
-    <br><br><br>
-    <!--Attribute password-->
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="Password" required>
+      <br /><br /><br />
+      <!--Attribute password-->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
 
-    <br><br><br>
-    <!--Attribute checkbox-->
-    <label for="checkbox">Checkbox1:</label>
-    <input type="checkbox" id="checkbox" name="checkbox">
-    <label for="checkbox2">Checkbox2:</label>
-    <input type="checkbox" id="checkbox2" name="checkbox">
+      <br /><br /><br />
+      <!--Attribute checkbox-->
+      <label for="checkbox">Checkbox1:</label>
+      <input type="checkbox" id="checkbox" name="checkbox" />
+      <label for="checkbox2">Checkbox2:</label>
+      <input type="checkbox" id="checkbox2" name="checkbox" />
 
+      <br /><br /><br />
+      <!--Attribute radio-->
+      <label for="radio1">Radio 1:</label>
+      <input type="radio" id="radio1" name="radio" value="option1" />
+      <br />
+      <label for="radio2">Radio 2:</label>
+      <input type="radio" id="radio2" name="radio" value="option2" />
 
-    <br><br><br>
-    <!--Attribute radio-->
-    <label for="radio1">Radio 1:</label>
-    <input type="radio" id="radio1" name="radio" value="option1">
-    <br>
-    <label for="radio2">Radio 2:</label>
-    <input type="radio" id="radio2" name="radio" value="option2">
+      <br /><br /><br />
+      <!--Attribute color-->
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" />
 
-    <br><br><br>
-    <!--Attribute color-->
-    <label for="color">Color:</label>
-    <input type="color" id="color" name="color">
+      <br /><br /><br />
+      <!--Attribute image-->
+      <input type="image" src="Attack.jpg" alt="Attack" width="200px" />
 
-    <br><br><br>
-    <!--Attribute image-->
-    <input type="image" src="Attack.jpg" alt="Attack" width="200px">
+      <br /><br /><br />
+      <!--Attribute date-->
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" />
 
-    <br><br><br>
-    <!--Attribute date-->
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date">
+      <br /><br /><br />
+      <!--Attribute number-->
+      <label for="number">Number:</label>
+      <input type="number" id="number" name="number" min="1" max="100" />
 
-    <br><br><br>
-    <!--Attribute number-->
-    <label for="number">Number:</label>
-    <input type="number" id="number" name="number" min="1" max="100">
+      <br /><br /><br />
+      <!--Attribute email-->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" />
 
-    <br><br><br>
-    <!--Attribute email-->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Email">
+      <br /><br /><br />
+      <!--Attribute reset-->
+      <button type="reset">Reset</button>
 
-    <br><br><br>
-    <!--Attribute reset-->
-    <button type="reset">Reset</button>
+      <br /><br /><br />
+      <!--Attribute file-->
+      <label for="file">File:</label>
+      <input type="file" id="file" name="file" accept="image/*" />
 
-    <br><br><br>
-    <!--Attribute file-->
-    <label for="file">File:</label>
-    <input type="file" id="file" name="file" accept="image/*">
+      <br /><br /><br />
+      <!--Attribute range-->
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range" min="1" max="100" />
 
-    <br><br><br>
-    <!--Attribute range-->
-    <label for="range">Range:</label>
-    <input type="range" id="range" name="range" min="1" max="100">
+      <br /><br /><br />
+      <!--Attribute tel-->
+      <label for="tel">Tel:</label>
+      <input type="tel" id="tel" name="tel" placeholder="Tel" />
 
-    <br><br><br>
-    <!--Attribute tel-->
-    <label for="tel">Tel:</label>
-    <input type="tel" id="tel" name="tel" placeholder="Tel">
+      <br /><br /><br />
+      <!--Attribute url-->
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" placeholder="URL" />
 
+      <br /><br /><br />
+      <!--Attribute time-->
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" />
 
-    <br><br><br>
-    <!--Attribute url-->
-    <label for="url">URL:</label>
-    <input type="url" id="url" name="url" placeholder="URL">
+      <br /><br /><br />
+      <!--Attribute week-->
+      <label for="week">Week:</label>
+      <input type="week" id="week" name="week" />
 
-    <br><br><br>
-    <!--Attribute time-->
-    <label for="time">Time:</label>
-    <input type="time" id="time" name="time">
+      <br /><br /><br />
+      <!--Attribute month-->
+      <label for="month">Month:</label>
+      <input type="month" id="month" name="month" />
 
-    <br><br><br>
-    <!--Attribute week-->
-    <label for="week">Week:</label>
-    <input type="week" id="week" name="week">
+      <br /><br /><br />
+      <!--Attribute month-year-->
+      <label for="month-year">Month-Year:</label>
+      <input type="month-year" id="month-year" name="month-year" />
 
-    <br><br><br>
-    <!--Attribute month-->
-    <label for="month">Month:</label>
-    <input type="month" id="month" name="month">
+      <br /><br /><br />
+      <!--Attribute search-->
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search" />
 
+      br><br /><br />
+      <!--Attribute hidden-->
+      <label for="hidden">Hidden:</label>
+      <input type="hidden" id="hidden" name="hidden" value="hidden value" />
 
-    <br><br><br>
-    <!--Attribute month-year-->
-    <label for="month-year">Month-Year:</label>
-    <input type="month-year" id="month-year" name="month-year">
+      <br /><br /><br />
+      <!--Attribute button-->
+      <button type="button">Button</button>
 
-    <br><br><br>
-    <!--Attribute search-->
-    <label for="search">Search:</label>
-    <input type="search" id="search" name="search">
+      <br /><br /><br />
+      <!--Attribute submit-->
+      <button type="submit">Submit</button>
 
-    br><br><br>
-    <!--Attribute hidden-->
-    <label for="hidden">Hidden:</label>
-    <input type="hidden" id="hidden" name="hidden" value="hidden value">
+      <br /><br /><br />
+      <!--Attribute textarea-->
+      <label for="textarea">Textarea:</label>
+      <textarea id="textarea" name="textarea" rows="4" cols="50">
+Textarea</textarea
+      >
 
-    <br><br><br>
-    <!--Attribute button-->
-    <button type="button">Button</button>
-
-
-    <br><br><br>
-    <!--Attribute submit-->
-    <button type="submit">Submit</button>
-
-    <br><br><br>
-    <!--Attribute textarea-->
-    <label for="textarea">Textarea:</label>
-    <textarea id="textarea" name="textarea" rows="4" cols="50">Textarea</textarea>
-
-    <br><br><br>
-    <!--Attribute select-->
-    <label for="select">Select:</label>
-    <select id="select" name="select">
+      <br /><br /><br />
+      <!--Attribute select-->
+      <label for="select">Select:</label>
+      <select id="select" name="select">
         <option value="option1" selected>Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
-    </select>
-
-
-</form>
-
-</body>
+      </select>
+    </form>
+  </body>
 </html>
