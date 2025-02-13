@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     <form action="" autocomplete="on" target="_blank" method="post">
@@ -164,18 +170,100 @@
       <br /><br /><br />
       <!--Attribute textarea-->
       <label for="textarea">Textarea:</label>
-      <textarea id="textarea" name="textarea" rows="4" cols="50">
-Textarea</textarea
-      >
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="please enter your massage"
+      ></textarea>
 
       <br /><br /><br />
-      <!--Attribute select-->
+      <!-- Attribute select size="5" -->
       <label for="select">Select:</label>
-      <select id="select" name="select">
-        <option value="option1" selected>Option 1</option>
+      <select  id="select" name="select">
+        <option value="option1" >Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+        <option value="option5">Option 5</option>
+        <option value="option6">Option 6</option>
+        <option value="option7">Option 7</option>
+        <option value="option8">Option 8</option>
+        <option value="option9">Option 9</option>
       </select>
     </form>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <form action="">
+      <fieldset>
+        <legend>personal Information</legend>
+        <div>
+          <h3>Full Name :</h3>
+          <label>First Name : </label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="">Last Name : </label>
+          <input type="text" />
+        </div>
+        <h3>Gender :</h3>
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" value="Male" name="gender" id="male" />
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" value="Female" name="gender" id="female" />
+        </div>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Skills</legend>
+        <div>
+          <h3>Skills :</h3>
+          <input type="checkbox" id="html" />
+          <label for="html">HTML </label>
+        </div>
+        <div>
+          <input type="checkbox" id="css" />
+          <label for="css">CSS </label>
+        </div>
+        <div>
+          <input type="checkbox" id="js" />
+          <label for="js">JavaScript</label>
+        </div>
+        <div>
+          <input type="checkbox" id="React" />
+          <label for="React">React.js</label>
+        </div>
+      </fieldset> 
+      <br>
+      <fieldset>
+        <legend>Education</legend>
+        <h3>Choose Your Programming Language : </h3>
+        <input type="text" list="myList">
+        <datalist id="myList">
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Java">Java</option>
+          <option value="C++">C++</option>
+          <option value="C#">C#</option>
+        </datalist>
+      </fieldset>
+        
+    </form>
   </body>
+  
+  <script>
+    const select = document.getElementById('select');
+  
+    select.addEventListener('click', () => {
+      select.size = 5; 
+    });
+  
+    select.addEventListener('blur', () => {
+      select.size = 0; 
+    });
+  </script>
+ 
 </html>
